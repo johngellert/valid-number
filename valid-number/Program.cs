@@ -6,7 +6,10 @@ namespace valid_number
     {
         static void Main(string[] args)
         {
+            // flag variable to control while loop.
             bool keepPlaying = true;
+
+            
             while (keepPlaying)
             {
                 
@@ -17,6 +20,8 @@ namespace valid_number
                 Console.WriteLine((number > 0 && number <= 10) ? "Valid" : "Invalid");
 
                 Console.WriteLine("Enter x to quit palying");
+
+                // if the input is "x" set keepPlaying to false and exit the while loop
                 keepPlaying = (Console.ReadLine()) != "x" ? true : false ;
             }
         }      
